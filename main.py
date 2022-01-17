@@ -1,6 +1,11 @@
-def Countzeroes(teksts):
-  return teksts.count('0')
+teksts = input('Ievadi ciparu virkni: ')
 
 
-text = '000000'
-print(Countzeroes(text))
+def Countnumbers(teksts):
+    summa = 0
+    for simbols in teksts:
+      summa = summa + int(simbols)
+    print(summa) 
+    return summa 
+
+Countnumbers(teksts)
